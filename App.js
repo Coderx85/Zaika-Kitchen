@@ -11,6 +11,11 @@ Body
    -Search
    -Restraunt Container
    -Restraunt Card
+     -Img 
+     -Name
+     -Star Rating
+     -Cuisine, delivery time
+     -price
 
 Footer
    -Copyright
@@ -42,13 +47,28 @@ const Header = () => {
   );
 };
 
+const RestrauntCard = () => {
+  return (
+    <div className="res-card">
+      <img className="res-logo"
+        alt="res-logo"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/6e04be27387483a7c00444f8e8241108"
+      />
+      <h3>Meghana Foods</h3>
+      <h4>Biryani, North Indian, Asian</h4>
+      <h4>4.4 Stars</h4>
+      <h4>38 min</h4>
+    </div>
+  );
+};
+
 const Body = () => {
   return (
     <div className="body">
-      <div className="search">
-        Search
+      <div className="search">Search</div>
+      <div className="res-container">
+        <RestrauntCard />
       </div>
-      <div className="res-container"></div>
     </div>
   );
 };

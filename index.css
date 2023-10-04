@@ -44,3 +44,20 @@ body {
   padding: 0px 24px;
   text-decoration: none;
 }
+
+.res-card{
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #0f0f0f41;
+    margin-left : 15px;
+    background-color: #f0f0f0;
+}
+
+.search {
+    padding: 20px;
+}
+
+.res-logo{
+    width: 100%;
+}
+
