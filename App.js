@@ -68,6 +68,13 @@ const Body = () => {
       <div className="search">Search</div>
       <div className="res-container">
         <RestrauntCard />
+        <RestrauntCard />
+        <RestrauntCard />
+        <RestrauntCard />
+        <RestrauntCard />
+        <RestrauntCard />
+        <RestrauntCard />
+        <RestrauntCard />
       </div>
     </div>
   );

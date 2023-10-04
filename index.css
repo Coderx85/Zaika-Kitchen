@@ -45,19 +45,28 @@ body {
   text-decoration: none;
 }
 
-.res-card{
-    width: 200px;
-    padding: 5px;
-    border: 1px solid #0f0f0f41;
-    margin-left : 15px;
-    background-color: #f0f0f0;
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.res-card {
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  background-color: #f0f0f0;
+}
+
+.res-card:hover {
+  border: 1px solid #0f0f0f41;
+  cursor: pointer;
 }
 
 .search {
-    padding: 20px;
+  padding: 20px;
 }
 
-.res-logo{
-    width: 100%;
+.res-logo {
+  width: 100%;
 }
-
