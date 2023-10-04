@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #8484843a;
+}
+
+.brand {
+  display: flex;
+}
+
+.brand_logo {
+  margin: 12px;
+  width: 70px;
+  object-fit: contain;
+}
+
+.brand_name {
+  margin-top: 24px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.nav-items > ul {
+  display: flex;
+  margin: 10px;
+  padding: 26px;
+  list-style-type: none;
+}
+
+.nav-items > ul > li {
+  padding: 0px 24px;
+  text-decoration: none;
+}
