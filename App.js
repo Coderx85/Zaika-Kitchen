@@ -1182,7 +1182,7 @@ const Body = () => {
         {
           //javascript map function to loop over restraunt cards
           resList.map((restaurant) => (
-            <RestaurantCard resData={restaurant} />
+            <RestaurantCard key={restaurant.info.id} resData={restaurant} />
           ))
         }
       </div>

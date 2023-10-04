@@ -20,3 +20,29 @@ A food delivery website made using REACT 🚀 ( currently in develpment mode )
 - Error Handling
 - HTTPS - allows a feature to have https
 - Tree Shaking - remove unused codebase from files
+
+
+<!-- 
+
+Basic layout of website- 
+
+Header
+   -logo
+   -nav items
+
+Body
+   -Search
+   -Restraunt Container
+   -Restraunt Card
+     -Img 
+     -Name
+     -Star Rating
+     -Cuisine, delivery time
+     -price
+
+Footer
+   -Copyright
+   -links
+   -Address
+   -Contact
+ -->
