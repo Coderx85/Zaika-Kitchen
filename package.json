@@ -1,0 +1,23 @@
+{
+  "name": "baratie",
+  "version": "1.0.0",
+  "description": "This is a food delivery website.",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utkarshsingx/baratie.git"
+  },
+  "keywords": [],
+  "author": "Utkarsh Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utkarshsingx/baratie/issues"
+  },
+  "homepage": "https://github.com/utkarshsingx/baratie#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
