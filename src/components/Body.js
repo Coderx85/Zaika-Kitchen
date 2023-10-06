@@ -6,6 +6,8 @@ const Body = () => {
   //local state variable - very powerful state variable
   const [listOfRestaurants, setListOfRestaurant] = useState([]);
 
+  const [searchText, setSearchText] = useState("");
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -17,7 +19,6 @@ const Body = () => {
     //converting this fetch data to json
     const json = await data.json();
 
-    console.log(json);
     setListOfRestaurant(
       //optional chaining
       json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
@@ -35,6 +36,20 @@ const Body = () => {
   ) : (
     <div className="body">
       <div className="filter">
+        <div className="search">
+          <input type="text" className="search-box" value={searchText} onChange={(e) => {
+              setSearchText(e.target.value);
+          }}  ></input>
+          <button
+            className="search-btn"
+            onClick={() => {
+              //filter the restaurant cards and update the UI
+                
+            }}
+          >
+            Search
+          </button>
+        </div>
         <button
           className="filter-btn"
           onClick={() => {
