@@ -4,6 +4,7 @@ import Shimmer from "./Shimmer";
 
 const Body = () => {
   //local state variable - very powerful state variable
+  //always call use state inside function of component on top level like here.
   const [listOfRestaurants, setListOfRestaurant] = useState([]);
   const [filterRestaurant, setfilterRestaurant] = useState([]);
 
