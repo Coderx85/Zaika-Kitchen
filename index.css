@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&family=Hanken+Grotesk:wght@300;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #8484843a;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .brand {
@@ -23,6 +26,7 @@ body {
 
 .brand_logo {
   margin: 12px;
+  margin-left: 70px;
   width: 70px;
   object-fit: contain;
 }
@@ -31,18 +35,28 @@ body {
   margin-top: 24px;
   margin-left: 20px;
   font-size: 30px;
+  font-family: 'Expletus Sans', cursive;
 }
 
-.nav-items > ul {
+.nav-items>ul {
   display: flex;
   margin: 10px;
   padding: 26px;
   list-style-type: none;
 }
 
-.nav-items > ul > li {
+.nav-items>ul>li>a {
   padding: 0px 24px;
   text-decoration: none;
+  color: black;
+}
+
+.nav-items>ul>li>a {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.nav-items>ul>li>a:hover {
+  border-bottom: 2px solid #F56A18;
 }
 
 .res-container {
@@ -84,16 +98,28 @@ body {
   width: 200px;
 }
 
-.login-btn {
+.login-btn{
   padding: 2px 10px;
   margin-left: 16px;
+  margin-right: 60px;
   cursor: pointer;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+}
+
+.login-btn:hover {
+  background-color: #F56A18;
+  color: white;
 }
 
 .filter {
   display: flex;
 }
 
-.filter-btn {
-  margin: 20px 0px;
-}
+.filter-btn{
+  margin: 20px 0px  ;
+ }
