@@ -84,16 +84,16 @@ body {
   width: 200px;
 }
 
-.login-btn{
+.login-btn {
   padding: 2px 10px;
   margin-left: 16px;
   cursor: pointer;
 }
 
-.filter{
+.filter {
   display: flex;
 }
 
-.filter-btn{
-  margin: 20px 0px  ;
- }
+.filter-btn {
+  margin: 20px 0px;
+}

@@ -63,3 +63,13 @@ Footer
    import {Component} from "path";
 
  -->
+
+ # React Hooks
+   (Normal JS Utility functions)
+ - useState() 
+ - useEffect()
+
+# 2 types of Routing in web apps  
+
+- Client Side Routing
+- Server Side Routing
