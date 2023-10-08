@@ -11,7 +11,6 @@ const Body = () => {
   const [searchText, setSearchText] = useState(""); //bind this search text to input box
 
   //whenever state variable is triggered, react triggers a reconciliation cycle(re-renders the components)
-  console.log("Body Rendered");
 
   useEffect(() => {
     fetchData();
@@ -23,6 +22,7 @@ const Body = () => {
     );
     //converting this fetch data to json
     const json = await data.json();
+    console.log(json);
 
     setListOfRestaurant(
       //optional chaining
