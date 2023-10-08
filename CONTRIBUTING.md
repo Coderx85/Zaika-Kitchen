@@ -1,10 +1,8 @@
-
 # Contribution Rules📚:
 
-- You are allowed to make pull requests that break the rules. We just merge it ;)
 - Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
 - Do NOT remove other content.
-- Styling/code can be pretty, ugly or stupid, big or small as long as it works
+- Styling/code should be upto standards as per the issue.
 - Add your name to the contributorsList file
 - Try to keep pull requests small to minimize merge conflicts
 
@@ -15,11 +13,11 @@
 - Clone on your local machine
 
 ```terminal
-git clone https://github.com/ossamamehmood/Hacktoberfest2023.git
+git clone https://github.com/utkarshsingx/baratie.git
 ```
 - Navigate to project directory.
 ```terminal
-cd Hacktoberfest2023
+cd baratie
 ```
 
 - Create a new Branch
@@ -51,7 +49,7 @@ git push origin my-new-branch
 An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.   
 
 ```terminal
-git remote add upstream https://github.com/ossamamehmood/Hacktoberfest2022
+git remote add upstream https://github.com/utkarshsingx/baratie.git
 ```
 
 You can verify that the new remote has been added by typing
