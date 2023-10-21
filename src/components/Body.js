@@ -1,7 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
-import { Link } from "react-router-dom";
 
 const Body = () => {
   //local state variable - very powerful state variable
@@ -12,6 +11,7 @@ const Body = () => {
   const [searchText, setSearchText] = useState(""); //bind this search text to input box
 
   //whenever state variable is triggered, react triggers a reconciliation cycle(re-renders the components)
+  console.log("Body Rendered");
 
   useEffect(() => {
     fetchData();
@@ -23,7 +23,6 @@ const Body = () => {
     );
     //converting this fetch data to json
     const json = await data.json();
-    console.log(json);
 
     setListOfRestaurant(
       //optional chaining
@@ -60,8 +59,7 @@ const Body = () => {
             onClick={() => {
               //filter the restaurant cards and update the UI
               //searchText
-
-              console.log(searchText);
+              
               const filterRestaurant = listOfRestaurants.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
               );
@@ -89,12 +87,7 @@ const Body = () => {
         {
           //javascript map function to loop over restraunt cards
           filterRestaurant.map((restaurant) => (
-            <Link
-              key={restaurant.info.id}
-              to={"/restaurants/" + restaurant.info.id}
-            >
-              <RestaurantCard resData={restaurant} />
-            </Link>
+            <RestaurantCard key={restaurant.info.id} resData={restaurant} />
           ))
         }
       </div>
