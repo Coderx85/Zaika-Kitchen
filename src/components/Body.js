@@ -19,19 +19,19 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.4697247&lng=77.4956607&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
     );
     //converting this fetch data to json
     const json = await data.json();
 
     setListOfRestaurant(
       //optional chaining
-      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[2]?.data?.data?.cards
     );
 
     setfilterRestaurant(
       //optional chaining
-      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[2]?.data?.data?.cards
     );
   };
 
@@ -59,7 +59,7 @@ const Body = () => {
             onClick={() => {
               //filter the restaurant cards and update the UI
               //searchText
-              
+
               const filterRestaurant = listOfRestaurants.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
               );
@@ -74,7 +74,7 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             const filteredList = listOfRestaurants.filter(
-              (res) => res.info.avgRating > 4
+              (res) => res.info.avgRating > 4.2
             );
             setListOfRestaurant(filteredList);
           }}
@@ -87,7 +87,7 @@ const Body = () => {
         {
           //javascript map function to loop over restraunt cards
           filterRestaurant.map((restaurant) => (
-            <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+            <RestaurantCard key={restaurant.data.id} resData={restaurant} />
           ))
         }
       </div>
