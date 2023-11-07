@@ -44,6 +44,8 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
+
+      
       <div className="filter">
         <div className="search">
           <input
