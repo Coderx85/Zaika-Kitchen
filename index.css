@@ -120,6 +120,7 @@ body {
 .shimmer-container {
   display: flex;
   flex-wrap: wrap;
+  margin: 50px 150px;
 }
 
 .shimmer-card {

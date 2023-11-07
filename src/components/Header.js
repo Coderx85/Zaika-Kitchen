@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import { LOGO_URL } from "../../utils/constants";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -16,10 +15,6 @@ const Header = () => {
     <div className="contain">
       <div className="header">
         <div className="brand">
-          {/* <img
-            className="brand_logo"
-            src={LOGO_URL} //js variable is given in curly braces
-          /> */}
           <h1 className="brand_name">Baratie</h1>
         </div>
 
