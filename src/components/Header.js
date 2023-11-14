@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [btnName, setbtnName] = useState("Login");
-  // let btnName = "Login";
 
+  // let btnName = "Login";
   //if no dependency array => useEffect is called on every render
   //if dependency array is empty = [] => useEffect is called on initial render(just once)
 
@@ -65,7 +65,8 @@ const Header = () => {
               ></input>
               <button className="search-btn">Search</button>
             </div>
-            <button className="filter-btn">Top Rated Restaurant</button>
+            <div>
+            </div>
           </div>
         </div>
       </div>

@@ -82,13 +82,30 @@ body {
   font-size: 32px;
   font-weight: 350;
 }
+.filter-container {
+  display: flex;
+  width: 100%;
+  margin: 10px 215px;
+}
+
+.filter-btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: solid rgb(209, 209, 209);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.filter-btn:hover{
+  background-color: #f2f2f2 ;
+}
 
 .res-container {
   display: flex;
   flex-wrap: wrap;
   margin: 10px 200px;
   border-radius: 20px;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .res-card {
