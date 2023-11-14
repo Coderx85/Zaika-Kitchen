@@ -96,8 +96,8 @@ body {
   background-color: transparent;
 }
 
-.filter-btn:hover{
-  background-color: #f2f2f2 ;
+.filter-btn:hover {
+  background-color: #f2f2f2;
 }
 
 .res-container {
@@ -124,6 +124,31 @@ body {
 
 .search {
   padding: 20px;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.search-box {
+  width: 35vw;
+  height: 5vh;
+  padding-left: 20px;
+  border: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.search-btn {
+  width: 4vw;
+  height: 5vh;
+  font-size: 25px;
+  font-weight: 400;
+  color: #2f2f2f;
+  background-color: rgb(194, 194, 194);
+  border: transparent;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
 }
 
 .filter {

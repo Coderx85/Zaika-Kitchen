@@ -58,15 +58,17 @@ const Header = () => {
               <input
                 type="text"
                 className="search-box"
+                placeholder="Search for restaurant, cuisine or a dish"
                 value={searchText}
                 onChange={(e) => {
                   setSearchText(e.target.value);
                 }}
               ></input>
-              <button className="search-btn">Search</button>
+              <button className="search-btn">
+                <i class="ri-search-line"></i>
+              </button>
             </div>
-            <div>
-            </div>
+            
           </div>
         </div>
       </div>

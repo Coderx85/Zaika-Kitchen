@@ -1,11 +1,24 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 // import { RESTAURANT_DATA } from "../../mocks/data";
 import resList from "../../utils/mockData";
 
 function Body() {
   const [listOfRestaurants, setListOfRestaurants] = useState(resList);
+
+  useEffect(() => {
+    fetchData();
+  }, []); //empty dependency array => useEffect is called on every render
+
+  const fetchData = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/menu/v4/full?lat=12.9351929&lng=77.62448069999999&menuId="
+    );
+    const json = await data.json();
+    // setListOfRestaurants(json.data.cards[2].data.data.cards)
+    console.log(json);
+  };
 
   return (
     <div className="body-container">
