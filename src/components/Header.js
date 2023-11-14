@@ -8,7 +8,6 @@ const Header = () => {
   //if no dependency array => useEffect is called on every render
   //if dependency array is empty = [] => useEffect is called on initial render(just once)
 
-  const [listOfRestaurants, setListOfRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
 
   return (
@@ -64,35 +63,9 @@ const Header = () => {
                   setSearchText(e.target.value);
                 }}
               ></input>
-              <button
-                className="search-btn"
-                onClick={() => {
-                  //filter the restaurant cards and update the UI
-                  //searchText
-
-                  const filterRestaurant = listOfRestaurants.filter((res) =>
-                    res.info.name
-                      .toLowerCase()
-                      .includes(searchText.toLowerCase())
-                  );
-
-                  setfilterRestaurant(filterRestaurant);
-                }}
-              >
-                Search
-              </button>
+              <button className="search-btn">Search</button>
             </div>
-            <button
-              className="filter-btn"
-              onClick={() => {
-                const filteredList = listOfRestaurants.filter(
-                  (res) => res.info.avgRating > 4.2
-                );
-                setListOfRestaurant(filteredList);
-              }}
-            >
-              Top Rated Restaurant
-            </button>
+            <button className="filter-btn">Top Rated Restaurant</button>
           </div>
         </div>
       </div>

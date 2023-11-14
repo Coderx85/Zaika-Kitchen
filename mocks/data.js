@@ -8302,7 +8302,7 @@ export const RESTAURANT_DATA = {
       },
     },
     cards: [
-      {
+      { 
         cardType: "carousel",
         layoutAlignmentType: "VERTICAL",
         data: {

@@ -86,18 +86,22 @@ body {
 .res-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
+  margin: 10px 200px;
+  border-radius: 20px;
+  justify-content: space-around;
 }
 
 .res-card {
-  width: 200px;
+  width: 320px;
   padding: 5px;
   margin: 10px;
-  background-color: #f0f0f0;
+  border-radius: 20px;
 }
 
 .res-card:hover {
-  border: 1px solid #0f0f0f41;
+  border: #ededed;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   cursor: pointer;
 }
 
@@ -115,6 +119,9 @@ body {
 
 .res-logo {
   width: 100%;
+  border-radius: 20px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .shimmer-container {
@@ -129,4 +136,77 @@ body {
   background-color: #f0f0f0;
   height: 300px;
   width: 200px;
+}
+
+.res-details {
+  margin-bottom: 15px;
+}
+
+.name-rating {
+  margin: 0px 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.res-name {
+  font-weight: 550;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 20px;
+}
+
+.res-rating {
+  border-radius: 8px;
+  background-color: #267e3e;
+  color: #f0f0f0;
+  padding: 1px 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.res-rating > i {
+  padding-left: 4px;
+  font-size: 13px;
+}
+
+.cuisine-cost {
+  font-size: 14px;
+  font-weight: 320;
+  margin: 0px 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cuisine {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 30px;
+}
+
+.cf2 {
+  overflow: hidden;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+  text-align: right;
+}
+
+.area-time {
+  font-size: 14px;
+  font-weight: 320;
+  margin: 0px 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.time {
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
 }
