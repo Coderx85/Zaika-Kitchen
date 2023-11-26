@@ -2,7 +2,7 @@
 
 A food delivery website made using REACT 🚀 ( currently in develpment mode )
 
-## Parcel 
+<!-- ## Parcel 
 
 - Dev Build 
 - Create Local Server
@@ -19,7 +19,7 @@ A food delivery website made using REACT 🚀 ( currently in develpment mode )
 - Has different build for both dev and production build.
 - Error Handling
 - HTTPS - allows a feature to have https
-- Tree Shaking - remove unused codebase from files
+- Tree Shaking - remove unused codebase from files -->
 
 
 <!-- 
@@ -64,7 +64,7 @@ Footer
 
  -->
 
- # React Hooks
+ <!-- # React Hooks
    (Normal JS Utility functions)
  - useState() 
  - useEffect()
@@ -72,4 +72,4 @@ Footer
 # 2 types of Routing in web apps  
 
 - Client Side Routing
-- Server Side Routing
+- Server Side Routing -->
