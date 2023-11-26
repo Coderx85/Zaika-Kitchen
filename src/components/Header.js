@@ -8,8 +8,6 @@ const Header = () => {
   //if no dependency array => useEffect is called on every render
   //if dependency array is empty = [] => useEffect is called on initial render(just once)
 
-  const [searchText, setSearchText] = useState("");
-
   return (
     <div className="contain">
       <div className="header">
@@ -52,25 +50,7 @@ const Header = () => {
         <h2 className="title-desc">
           We understand starving people more than anyone
         </h2>
-        <div className="search-bar">
-          <div className="filter">
-            <div className="search">
-              <input
-                type="text"
-                className="search-box"
-                placeholder="Search for restaurant, cuisine or a dish"
-                value={searchText}
-                onChange={(e) => {
-                  setSearchText(e.target.value);
-                }}
-              ></input>
-              <button className="search-btn">
-                <i class="ri-search-line"></i>
-              </button>
-            </div>
-            
-          </div>
-        </div>
+        
       </div>
     </div>
   );

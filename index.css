@@ -127,9 +127,13 @@ body {
   width: 100%;
   display: flex;
   margin-top: 20px;
+  background-color: #267e3e;
+  display: flex;
 }
 
 .search-box {
+  align-items: center;
+  justify-content: center;
   width: 35vw;
   height: 5vh;
   padding-left: 20px;
@@ -169,15 +173,16 @@ body {
 .shimmer-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 150px;
+  margin: 10px 200px;
+  border-radius: 20px;
 }
 
 .shimmer-card {
-  margin-top: 50px;
+  width: 320px;
+  padding: 5px;
   margin: 10px;
-  background-color: #f0f0f0;
-  height: 300px;
-  width: 200px;
+  border-radius: 20px;
+  color: #5e5e5e;
 }
 
 .res-details {
