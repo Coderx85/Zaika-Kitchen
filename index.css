@@ -123,12 +123,14 @@ body {
 }
 
 .search {
-  padding: 20px;
+  padding: 0px 20px;
+  padding-bottom: 30px;
   width: 100%;
   display: flex;
   margin-top: 20px;
-  background-color: #267e3e;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-box {
@@ -137,7 +139,7 @@ body {
   width: 35vw;
   height: 5vh;
   padding-left: 20px;
-  border: transparent;
+  border: 1px solid rgb(67, 67, 67);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
